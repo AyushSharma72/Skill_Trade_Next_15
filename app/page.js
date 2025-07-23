@@ -247,6 +247,8 @@ function Home() {
             meet your specific requirements
           </p>
 
+          
+          {/* animation added here*/}
           <div ref={ref_services} className={`grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 ${visible.get(ref_services)?'animate-spawn':''}`}>
             {services.map((service) => (
               <ServiceCard key={service.id} service={service} />
@@ -282,6 +284,7 @@ function Home() {
             </h2>
           </div>
 
+          {/* animation added here*/}
           <div ref={ref_customer} className={`grid grid-cols-1 md:grid-cols-3 gap-8 ${visible.get(ref_customer)?'animate-spawn':''}`}>
             {testimonials.map((testimonial) => (
               <TestimonialCard key={testimonial.id} testimonial={testimonial} />
