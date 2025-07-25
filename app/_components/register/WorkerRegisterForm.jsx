@@ -22,6 +22,8 @@ import {
 } from "@/components/ui/select";
 import "react-phone-input-2/lib/style.css";
 
+import { GoogleLoginButton } from "@/components/OAuthLogin";
+
 const WorkerRegisterForm = ({ setLoading, loading }) => {
   const [showPassword, setShowPassword] = useState(false);
   const [serviceType, setServiceType] = useState("");
@@ -342,6 +344,12 @@ const WorkerRegisterForm = ({ setLoading, loading }) => {
                 ? "Creating Account..."
                 : "Create Service Provider Account"}
             </Button>
+
+            <hr className="border-1" />
+
+            <p className="text-center text-gray-600 font-bold">OR</p>
+
+            <GoogleLoginButton />
           </form>
         </CardContent>
       </Card>
